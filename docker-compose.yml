@@ -1,0 +1,8 @@
+version: '3.9'
+
+services:
+  map-app:
+    container_name: maps-app
+    ports:
+      - 3000:80
+    image: urielch19/maps-app-react
