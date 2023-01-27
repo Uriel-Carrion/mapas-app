@@ -7,7 +7,7 @@ import { MapsApp } from "./MapsApp";
 //@ts-ignore
 import mapboxgl from '!mapbox-gl'; // or "const mapboxgl = require('mapbox-gl');"
 
-mapboxgl.accessToken = 'pk.eyJ1IjoidXJpZWxjYXJyaW9uIiwiYSI6ImNramFjeTZ6MTJtbWoyeXNidnk2ZHhoMzAifQ.fLi9Zu6qRsrBR00NS_j2ag';
+mapboxgl.accessToken = process.env.REACT_APP_TOKEN || "";
 
 
 const errorMessage = "Tu navegador no tiene opción de Geocalización";
